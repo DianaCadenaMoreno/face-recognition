@@ -69,13 +69,10 @@ class FaceRecognitionApp:
         image_with_boxes = image.copy()
         for face_location in face_locations:
             top, right, bottom, left = face_location
-            # Dibujar un rectángulo en el borde del rostro
             self.draw_rectangle(image_with_boxes, top, right, bottom, left)
         return image_with_boxes
 
     def draw_rectangle(self, image, top, right, bottom, left):
-        # Modificar los bordes de los rostros
-        # Establecer el grosor del borde
         border_thickness = 2
 
         # Dibujar bordes en el recuadro de la cara
