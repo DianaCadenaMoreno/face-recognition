@@ -13,7 +13,7 @@ class FaceRecognitionApp:
         self.left_frame = tk.Frame(self.root)
         self.left_frame.pack(side=tk.LEFT, padx=10, pady=10)
 
-        self.label = tk.Label(self.left_frame, text="Cargar Imagen")
+        self.label = tk.Label(self.left_frame, text="Imagen original")
         self.label.pack()
 
         self.image_label = tk.Label(self.left_frame)
@@ -29,7 +29,7 @@ class FaceRecognitionApp:
         self.result_label = tk.Label(self.right_frame, text="Resultados")
         self.result_label.pack()
 
-        self.result_text = tk.Text(self.right_frame, width=40, height=20)
+        self.result_text = tk.Text(self.right_frame, width=90, height=20)
         self.result_text.pack()
 
         self.marked_image_label = tk.Label(self.right_frame)
