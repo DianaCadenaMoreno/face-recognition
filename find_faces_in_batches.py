@@ -36,7 +36,7 @@ while video_capture.isOpened():
     frames.append(frame)
 
     # Every 128 frames (the default batch size), batch process the list of frames to find faces
-    if len(frames) == 128:
+    if len(frames) == 12:
         batch_of_face_locations = face_recognition.batch_face_locations(frames, number_of_times_to_upsample=0)
 
         # Now let's list all the faces we found in all 128 frames
